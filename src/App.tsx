@@ -4,7 +4,6 @@ import {StatusBar, useColorScheme} from 'react-native';
 import {colors} from './presentation/config/theme';
 import {NavigationContainer} from '@react-navigation/native';
 import {SideMenuNavigator} from './presentation/routes/SideMenuNavigator';
-
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
