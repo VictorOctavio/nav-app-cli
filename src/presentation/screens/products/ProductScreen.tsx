@@ -11,7 +11,7 @@ export const ProductScreen = () => {
     navigation.setOptions({
       title: name,
     });
-  }, []);
+  }, [name, navigation]);
   return (
     <View style={globalStyles.wrapper}>
       <Text>ProductScreen {id + ' - ' + name}</Text>

@@ -1,12 +1,14 @@
 import {View} from 'react-native';
 import React from 'react';
 import {globalStyles} from '../../config/theme';
-import {useNavigation} from '@react-navigation/native';
+import {NavigationProp, useNavigation} from '@react-navigation/native';
 import {PrimaryButton} from '../../components/shared/PrimaryButton';
+import {RootStackParams} from '../../routes/StackNavigator';
 
 interface Props {}
 export const HomeScreen: React.FC<Props> = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation<NavigationProp<RootStackParams>>();
+
   return (
     <View style={globalStyles.wrapper}>
       <PrimaryButton

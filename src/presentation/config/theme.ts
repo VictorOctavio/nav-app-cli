@@ -8,7 +8,7 @@ export const colors = {
   danger: '#e71d36',
   dark: '#22223b',
 
-  backgroudColor: '#22223b',
+  backgroudColor: '#f1f1f1',
 };
 
 export const globalStyles = StyleSheet.create({
